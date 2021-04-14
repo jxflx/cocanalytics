@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    a
+</body>
+<script>
+    const headerAuth = {
+        Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImY2ODNjMmFmLWE0Y2MtNDI3NS1iOGZlLTllYWYzNzNkZTYwYSIsImlhdCI6MTYxODM0NzU5MSwic3ViIjoiZGV2ZWxvcGVyL2IzMTVmZWI2LTU1MmYtZTk1Mi0wOWMzLTVlZjkyZTVmNmFmMiIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjE3Mi42Ny4yMjIuMTg4IiwiMTA0LjIxLjk0LjExMSIsIjE4NS4xOTkuMTExLjE1MyIsIjE4NS4xOTkuMTA4LjE1MyJdLCJ0eXBlIjoiY2xpZW50In1dfQ.wJDvQJCw_MKsc4Lo5TSz0BdtW1uvlOS4Ub0cGYHdhCi-e7NyRW-XKbf51zNC6i5HflmkwvmxlCuslIMO1yF86w'
+    }
+    fetch("https://api.clashofclans.com/v1/players/%23LJP9JV8PP", {
+        method: 'GET',
+        headers: headerAuth
+    })
+        .then((data) => {
+            console.log(data)
+        })
+</script>
+
+</html>
